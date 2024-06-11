@@ -32,23 +32,41 @@ function App() {
     calculateSum();
   };
 
-
   const calculateSum = () => {
-    const sum = (sliderValues.id6 * 0.097) +
-      (sliderValues.id10 * 0.096) +
-      (sliderValues.id11 * 0.041) +
-      (sliderValues.id3 * 0.015) +
-      (sliderValues.id4 * 0.06) +
-      (sliderValues.id8 * 0.002) +
-      (sliderValues.id14 * 0.347) +
-      (sliderValues.id2 * 0.160) +
-      (sliderValues.id7 * 0.050) +
-      (sliderValues.id13 * 0.030) +
-      (sliderValues.id9 * 0.001) +
-      (sliderValues.id12 * 0.101);
+    const sum = ((((sliderValues.id6 - 3.17) / (16 - 3.17)) * 0.097) +
+      (((sliderValues.id10 - (-2.15)) / (2.58 - (-2.15))) * 0.096) +
+      (((sliderValues.id11 - 1.32) / (48.38 - 1.32)) * 0.041) +
+      (((sliderValues.id3 - 1530) / (130244 - 1530)) * 0.015) +
+      (((sliderValues.id4 - 37) / (78.90 - 37)) * 0.06) +
+      (((sliderValues.id8 - 0.36) / (0.62 - 0.36)) * 0.002) +
+      (((sliderValues.id14 - 27) / (1787 - 27)) * 0.347) +
+      (((sliderValues.id2 - 11.90) / (16.26 - 11.90)) * 0.160) +
+      (((sliderValues.id7 - 0.09) / (316.67 - 0.09)) * 0.050) +
+      // (sliderValues.id1*0) +
+      (((sliderValues.id13 - 4.04) / (31.79 - 4.04)) * 0.030) +
+      (((sliderValues.id9 - 29) / (76 - 29)) * 0.001) +
+      // (sliderValues.id5*0) +
+      (((sliderValues.id12 - 0) / (1)) * 0.101)) * 100
 
-    setCalculatedValue(sum.toFixed(1));
+    setCalculatedValue(sum.toFixed(1))
   };
+
+  // const calculateSum = () => {
+  //   const sum = ((sliderValues.id6 * 0.097) +
+  //     (sliderValues.id10 * 0.096) +
+  //     (sliderValues.id11 * 0.041) +
+  //     (sliderValues.id3 * 0.015) +
+  //     (sliderValues.id4 * 0.06) +
+  //     (sliderValues.id8 * 0.002) +
+  //     (sliderValues.id14 * 0.347) +
+  //     (sliderValues.id2 * 0.160) +
+  //     (sliderValues.id7 * 0.050) +
+  //     (sliderValues.id13 * 0.030) +
+  //     (sliderValues.id9 * 0.001) +
+  //     (sliderValues.id12 * 0.101)) * 100;
+
+  //   setCalculatedValue(sum.toFixed(1));
+  // };
 
   const [calculatedValue, setCalculatedValue] = useState('');
 
@@ -73,6 +91,8 @@ function App() {
       handleSliderChange("id10", data.environmentalHazardIndex);  // Assuming 'id8' is the Gini Index slider ID
       handleSliderChange("id11", data.foodAccessPercentage);  // Assuming 'id8' is the Gini Index slider ID
       handleSliderChange("id14", data.incarcerationRate);  // Assuming 'id8' is the Gini Index slider ID
+      handleSliderChange("id12", data.towsend_material_deprivation);  // Assuming 'id8' is the Gini Index slider ID
+      handleSliderChange("id13", data.mobility);  // Assuming 'id8' is the Gini Index slider ID
       calculateSum();
     }
     console.log(data.gini);
@@ -99,11 +119,11 @@ function App() {
             <Slider feature={"Mobility (Percentage of People Moving)"} text={"Mobility (Percentage of People Moving)"} id="id13" min="0" max="100" value={sliderValues.id13} onChange={handleSliderChange} />
             <Slider feature={"Incarceration Rate per 100,000"} text={"Incarceration Rate per 100,000"} id="id14" min="27.0" max="1787.0" value={sliderValues.id14} onChange={handleSliderChange} />
           </div>
-          
+
         </div>
         <div style={{ paddingTop: '10px' }} />
         <div className='map-container'>
-          <Leaflet onDataFetch={handleFetchedData}/>
+          <Leaflet onDataFetch={handleFetchedData} />
           <button className="button-27" role="button" onClick={calculateSum} style={{ textAlign: 'center', display: 'block', marginLeft: 'auto', width: '40%', paddingRight: '50px' }}>{`Life Expectancy: ${calculatedValue}`}</button>
         </div>
       </div>

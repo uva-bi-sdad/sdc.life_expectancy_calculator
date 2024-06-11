@@ -12,8 +12,7 @@
             "environmentalHazardIndex": -1.627005,
             "foodAccessPercentage": 29.379164,
             "incarcerationRate": 662.0,
-            "laborParticipateRate": 54.1,
-            "towsend_material_deprivation": 0.411701
+            "laborParticipateRate": 54.1
         },
         {
             "id": 51003,
@@ -27,8 +26,7 @@
             "environmentalHazardIndex": -0.636914,
             "foodAccessPercentage": 12.139982,
             "incarcerationRate": 262.0,
-            "laborParticipateRate": 61.8,
-            "towsend_material_deprivation": 0.271807
+            "laborParticipateRate": 61.8
         },
         {
             "id": 51005,
@@ -42,8 +40,7 @@
             "environmentalHazardIndex": -1.360072,
             "foodAccessPercentage": 31.569418,
             "incarcerationRate": 892.0,
-            "laborParticipateRate": 51.2,
-            "towsend_material_deprivation": 0.273156
+            "laborParticipateRate": 51.2
         },
         {
             "id": 51007,
@@ -57,8 +54,7 @@
             "environmentalHazardIndex": -0.544461,
             "foodAccessPercentage": 29.68262,
             "incarcerationRate": 637.0,
-            "laborParticipateRate": 63.7,
-            "towsend_material_deprivation": 0.514519
+            "laborParticipateRate": 63.7
         },
         {
             "id": 51009,
@@ -72,8 +68,7 @@
             "environmentalHazardIndex": -0.773174,
             "foodAccessPercentage": 18.250774,
             "incarcerationRate": 701.0,
-            "laborParticipateRate": 60.4,
-            "towsend_material_deprivation": 0.331635
+            "laborParticipateRate": 60.4
         },
         {
             "id": 51011,
@@ -87,8 +82,7 @@
             "environmentalHazardIndex": -0.842814,
             "foodAccessPercentage": 27.935836,
             "incarcerationRate": 708.0,
-            "laborParticipateRate": 58.6,
-            "towsend_material_deprivation": 0.238193
+            "laborParticipateRate": 58.6
         },
         {
             "id": 51013,
@@ -102,8 +96,7 @@
             "environmentalHazardIndex": 2.577701,
             "foodAccessPercentage": 5.001194,
             "incarcerationRate": 70.0,
-            "laborParticipateRate": 78.9,
-            "towsend_material_deprivation": 0.633756
+            "laborParticipateRate": 78.9
         },
         {
             "id": 51015,
@@ -117,8 +110,7 @@
             "environmentalHazardIndex": -1.243097,
             "foodAccessPercentage": 22.037263,
             "incarcerationRate": 674.0,
-            "laborParticipateRate": 58.7,
-            "towsend_material_deprivation": 0.172932
+            "laborParticipateRate": 58.7
         },
         {
             "id": 51017,
@@ -132,8 +124,7 @@
             "environmentalHazardIndex": -2.011928,
             "foodAccessPercentage": 42.999787,
             "incarcerationRate": 379.0,
-            "laborParticipateRate": 56.9,
-            "towsend_material_deprivation": 0.248729
+            "laborParticipateRate": 56.9
         },
         {
             "id": 51019,
@@ -147,8 +138,7 @@
             "environmentalHazardIndex": -0.863119,
             "foodAccessPercentage": 21.5881,
             "incarcerationRate": 409.0,
-            "laborParticipateRate": 58.5,
-            "towsend_material_deprivation": 0.181787
+            "laborParticipateRate": 58.5
         },
         {
             "id": 51021,
@@ -162,8 +152,7 @@
             "environmentalHazardIndex": -1.406634,
             "foodAccessPercentage": 23.027647,
             "incarcerationRate": 382.0,
-            "laborParticipateRate": 43.7,
-            "towsend_material_deprivation": 0.21398
+            "laborParticipateRate": 43.7
         },
         {
             "id": 51023,
@@ -177,8 +166,7 @@
             "environmentalHazardIndex": -0.93467,
             "foodAccessPercentage": 23.257596,
             "incarcerationRate": 363.0,
-            "laborParticipateRate": 60.1,
-            "towsend_material_deprivation": 0.111416
+            "laborParticipateRate": 60.1
         },
         {
             "id": 51025,
@@ -192,8 +180,7 @@
             "environmentalHazardIndex": -0.499251,
             "foodAccessPercentage": 28.553793,
             "incarcerationRate": 1167.0,
-            "laborParticipateRate": 48.4,
-            "towsend_material_deprivation": 0.367976
+            "laborParticipateRate": 48.4
         },
         {
             "id": 51027,
@@ -207,8 +194,7 @@
             "environmentalHazardIndex": -0.541443,
             "foodAccessPercentage": 47.402747,
             "incarcerationRate": 1246.0,
-            "laborParticipateRate": 37.0,
-            "towsend_material_deprivation": 0.292253
+            "laborParticipateRate": 37.0
         },
         {
             "id": 51029,
@@ -222,8 +208,7 @@
             "environmentalHazardIndex": -0.847494,
             "foodAccessPercentage": 39.803658,
             "incarcerationRate": 872.0,
-            "laborParticipateRate": 49.2,
-            "towsend_material_deprivation": 0.327317
+            "laborParticipateRate": 49.2
         },
         {
             "id": 51031,
@@ -237,8 +222,7 @@
             "environmentalHazardIndex": -0.521597,
             "foodAccessPercentage": 21.057959,
             "incarcerationRate": 695.0,
-            "laborParticipateRate": 59.3,
-            "towsend_material_deprivation": 0.248425
+            "laborParticipateRate": 59.3
         },
         {
             "id": 51033,
@@ -252,8 +236,7 @@
             "environmentalHazardIndex": -0.206674,
             "foodAccessPercentage": 25.134542,
             "incarcerationRate": 700.0,
-            "laborParticipateRate": 68.5,
-            "towsend_material_deprivation": 0.260141
+            "laborParticipateRate": 68.5
         },
         {
             "id": 51035,
@@ -267,8 +250,7 @@
             "environmentalHazardIndex": -1.220169,
             "foodAccessPercentage": 30.350653,
             "incarcerationRate": 654.0,
-            "laborParticipateRate": 52.7,
-            "towsend_material_deprivation": 0.258784
+            "laborParticipateRate": 52.7
         },
         {
             "id": 51036,
@@ -282,8 +264,7 @@
             "environmentalHazardIndex": -0.405331,
             "foodAccessPercentage": 29.659296,
             "incarcerationRate": 747.0,
-            "laborParticipateRate": 56.8,
-            "towsend_material_deprivation": 0.197817
+            "laborParticipateRate": 56.8
         },
         {
             "id": 51037,
@@ -297,8 +278,7 @@
             "environmentalHazardIndex": -0.510526,
             "foodAccessPercentage": 41.155456,
             "incarcerationRate": 822.0,
-            "laborParticipateRate": 53.4,
-            "towsend_material_deprivation": 0.398823
+            "laborParticipateRate": 53.4
         },
         {
             "id": 51041,
@@ -312,8 +292,7 @@
             "environmentalHazardIndex": 0.272752,
             "foodAccessPercentage": 11.972159,
             "incarcerationRate": 326.0,
-            "laborParticipateRate": 68.1,
-            "towsend_material_deprivation": 0.247991
+            "laborParticipateRate": 68.1
         },
         {
             "id": 51043,
@@ -327,8 +306,7 @@
             "environmentalHazardIndex": -0.786595,
             "foodAccessPercentage": 16.578945,
             "incarcerationRate": 162.0,
-            "laborParticipateRate": 61.8,
-            "towsend_material_deprivation": 0.161975
+            "laborParticipateRate": 61.8
         },
         {
             "id": 51045,
@@ -342,8 +320,7 @@
             "environmentalHazardIndex": -1.448477,
             "foodAccessPercentage": 16.021793,
             "incarcerationRate": 265.0,
-            "laborParticipateRate": 56.8,
-            "towsend_material_deprivation": 0.212894
+            "laborParticipateRate": 56.8
         },
         {
             "id": 51047,
@@ -357,8 +334,7 @@
             "environmentalHazardIndex": -0.590496,
             "foodAccessPercentage": 16.202068,
             "incarcerationRate": 579.0,
-            "laborParticipateRate": 64.0,
-            "towsend_material_deprivation": 0.319791
+            "laborParticipateRate": 64.0
         },
         {
             "id": 51049,
@@ -372,8 +348,7 @@
             "environmentalHazardIndex": -0.719621,
             "foodAccessPercentage": 31.11952,
             "incarcerationRate": 667.0,
-            "laborParticipateRate": 62.6,
-            "towsend_material_deprivation": 0.179854
+            "laborParticipateRate": 62.6
         },
         {
             "id": 51051,
@@ -387,8 +362,7 @@
             "environmentalHazardIndex": -0.847971,
             "foodAccessPercentage": 48.123509,
             "incarcerationRate": 1132.0,
-            "laborParticipateRate": 38.7,
-            "towsend_material_deprivation": 0.32356
+            "laborParticipateRate": 38.7
         },
         {
             "id": 51053,
@@ -402,8 +376,7 @@
             "environmentalHazardIndex": -0.029817,
             "foodAccessPercentage": 24.057716,
             "incarcerationRate": 721.0,
-            "laborParticipateRate": 62.1,
-            "towsend_material_deprivation": 0.317478
+            "laborParticipateRate": 62.1
         },
         {
             "id": 51057,
@@ -417,8 +390,7 @@
             "environmentalHazardIndex": -0.684618,
             "foodAccessPercentage": 29.909978,
             "incarcerationRate": 870.0,
-            "laborParticipateRate": 57.5,
-            "towsend_material_deprivation": 0.44832
+            "laborParticipateRate": 57.5
         },
         {
             "id": 51059,
@@ -432,8 +404,7 @@
             "environmentalHazardIndex": 0.922091,
             "foodAccessPercentage": 3.958281,
             "incarcerationRate": 80.0,
-            "laborParticipateRate": 71.4,
-            "towsend_material_deprivation": 0.366819
+            "laborParticipateRate": 71.4
         },
         {
             "id": 51061,
@@ -447,8 +418,7 @@
             "environmentalHazardIndex": -0.582481,
             "foodAccessPercentage": 11.064703,
             "incarcerationRate": 261.0,
-            "laborParticipateRate": 66.8,
-            "towsend_material_deprivation": 0.168261
+            "laborParticipateRate": 66.8
         },
         {
             "id": 51063,
@@ -462,8 +432,7 @@
             "environmentalHazardIndex": -1.43557,
             "foodAccessPercentage": 34.679715,
             "incarcerationRate": 540.0,
-            "laborParticipateRate": 58.1,
-            "towsend_material_deprivation": 0.166579
+            "laborParticipateRate": 58.1
         },
         {
             "id": 51065,
@@ -477,8 +446,7 @@
             "environmentalHazardIndex": -0.709817,
             "foodAccessPercentage": 13.831522,
             "incarcerationRate": 373.0,
-            "laborParticipateRate": 60.2,
-            "towsend_material_deprivation": 0.147145
+            "laborParticipateRate": 60.2
         },
         {
             "id": 51067,
@@ -492,8 +460,7 @@
             "environmentalHazardIndex": -0.968137,
             "foodAccessPercentage": 33.076236,
             "incarcerationRate": 572.0,
-            "laborParticipateRate": 54.4,
-            "towsend_material_deprivation": 0.247232
+            "laborParticipateRate": 54.4
         },
         {
             "id": 51069,
@@ -507,8 +474,7 @@
             "environmentalHazardIndex": -0.548808,
             "foodAccessPercentage": 13.501662,
             "incarcerationRate": 223.0,
-            "laborParticipateRate": 63.7,
-            "towsend_material_deprivation": 0.204691
+            "laborParticipateRate": 63.7
         },
         {
             "id": 51071,
@@ -522,8 +488,7 @@
             "environmentalHazardIndex": -1.235879,
             "foodAccessPercentage": 22.415238,
             "incarcerationRate": 757.0,
-            "laborParticipateRate": 57.1,
-            "towsend_material_deprivation": 0.257883
+            "laborParticipateRate": 57.1
         },
         {
             "id": 51073,
@@ -537,8 +502,7 @@
             "environmentalHazardIndex": -0.791322,
             "foodAccessPercentage": 18.075049,
             "incarcerationRate": 645.0,
-            "laborParticipateRate": 62.5,
-            "towsend_material_deprivation": 0.152886
+            "laborParticipateRate": 62.5
         },
         {
             "id": 51075,
@@ -552,8 +516,7 @@
             "environmentalHazardIndex": -0.549292,
             "foodAccessPercentage": 18.927496,
             "incarcerationRate": 253.0,
-            "laborParticipateRate": 57.9,
-            "towsend_material_deprivation": 0.166778
+            "laborParticipateRate": 57.9
         },
         {
             "id": 51077,
@@ -567,8 +530,7 @@
             "environmentalHazardIndex": -1.499393,
             "foodAccessPercentage": 41.583489,
             "incarcerationRate": 690.0,
-            "laborParticipateRate": 50.6,
-            "towsend_material_deprivation": 0.199101
+            "laborParticipateRate": 50.6
         },
         {
             "id": 51079,
@@ -582,8 +544,7 @@
             "environmentalHazardIndex": -1.120679,
             "foodAccessPercentage": 23.819877,
             "incarcerationRate": 460.0,
-            "laborParticipateRate": 68.6,
-            "towsend_material_deprivation": 0.271909
+            "laborParticipateRate": 68.6
         },
         {
             "id": 51081,
@@ -597,8 +558,7 @@
             "environmentalHazardIndex": -0.388635,
             "foodAccessPercentage": 27.459874,
             "incarcerationRate": 975.0,
-            "laborParticipateRate": 39.7,
-            "towsend_material_deprivation": 0.430051
+            "laborParticipateRate": 39.7
         },
         {
             "id": 51083,
@@ -612,8 +572,7 @@
             "environmentalHazardIndex": -0.254095,
             "foodAccessPercentage": 26.76794,
             "incarcerationRate": 984.0,
-            "laborParticipateRate": 51.6,
-            "towsend_material_deprivation": 0.260724
+            "laborParticipateRate": 51.6
         },
         {
             "id": 51085,
@@ -627,8 +586,7 @@
             "environmentalHazardIndex": 0.137306,
             "foodAccessPercentage": 9.429735,
             "incarcerationRate": 268.0,
-            "laborParticipateRate": 67.0,
-            "towsend_material_deprivation": 0.126457
+            "laborParticipateRate": 67.0
         },
         {
             "id": 51087,
@@ -642,8 +600,7 @@
             "environmentalHazardIndex": 0.676624,
             "foodAccessPercentage": 9.126229,
             "incarcerationRate": 535.0,
-            "laborParticipateRate": 69.4,
-            "towsend_material_deprivation": 0.336114
+            "laborParticipateRate": 69.4
         },
         {
             "id": 51089,
@@ -657,8 +614,7 @@
             "environmentalHazardIndex": -0.53837,
             "foodAccessPercentage": 39.374301,
             "incarcerationRate": 1075.0,
-            "laborParticipateRate": 50.0,
-            "towsend_material_deprivation": 0.370987
+            "laborParticipateRate": 50.0
         },
         {
             "id": 51091,
@@ -672,8 +628,7 @@
             "environmentalHazardIndex": -2.14767,
             "foodAccessPercentage": 35.251129,
             "incarcerationRate": 134.0,
-            "laborParticipateRate": 45.2,
-            "towsend_material_deprivation": 0.341639
+            "laborParticipateRate": 45.2
         },
         {
             "id": 51093,
@@ -687,8 +642,7 @@
             "environmentalHazardIndex": -0.757106,
             "foodAccessPercentage": 16.462146,
             "incarcerationRate": 487.0,
-            "laborParticipateRate": 63.8,
-            "towsend_material_deprivation": 0.266473
+            "laborParticipateRate": 63.8
         },
         {
             "id": 51095,
@@ -702,8 +656,7 @@
             "environmentalHazardIndex": -0.457712,
             "foodAccessPercentage": 11.198874,
             "incarcerationRate": 348.0,
-            "laborParticipateRate": 58.4,
-            "towsend_material_deprivation": 0.243859
+            "laborParticipateRate": 58.4
         },
         {
             "id": 51097,
@@ -717,8 +670,7 @@
             "environmentalHazardIndex": -0.699194,
             "foodAccessPercentage": 37.428098,
             "incarcerationRate": 632.0,
-            "laborParticipateRate": 61.9,
-            "towsend_material_deprivation": 0.170303
+            "laborParticipateRate": 61.9
         },
         {
             "id": 51099,
@@ -732,8 +684,7 @@
             "environmentalHazardIndex": -0.457471,
             "foodAccessPercentage": 16.554283,
             "incarcerationRate": 536.0,
-            "laborParticipateRate": 68.0,
-            "towsend_material_deprivation": 0.190352
+            "laborParticipateRate": 68.0
         },
         {
             "id": 51101,
@@ -747,8 +698,7 @@
             "environmentalHazardIndex": -0.469875,
             "foodAccessPercentage": 19.872039,
             "incarcerationRate": 453.0,
-            "laborParticipateRate": 66.8,
-            "towsend_material_deprivation": 0.124634
+            "laborParticipateRate": 66.8
         },
         {
             "id": 51103,
@@ -762,8 +712,7 @@
             "environmentalHazardIndex": -1.048677,
             "foodAccessPercentage": 28.342449,
             "incarcerationRate": 556.0,
-            "laborParticipateRate": 45.9,
-            "towsend_material_deprivation": 0.346383
+            "laborParticipateRate": 45.9
         },
         {
             "id": 51105,
@@ -777,8 +726,7 @@
             "environmentalHazardIndex": -0.507203,
             "foodAccessPercentage": 39.788646,
             "incarcerationRate": 1155.0,
-            "laborParticipateRate": 42.0,
-            "towsend_material_deprivation": 0.538939
+            "laborParticipateRate": 42.0
         },
         {
             "id": 51107,
@@ -792,8 +740,7 @@
             "environmentalHazardIndex": 0.238021,
             "foodAccessPercentage": 4.421142,
             "incarcerationRate": 83.0,
-            "laborParticipateRate": 75.4,
-            "towsend_material_deprivation": 0.215336
+            "laborParticipateRate": 75.4
         },
         {
             "id": 51109,
@@ -807,8 +754,7 @@
             "environmentalHazardIndex": -0.675198,
             "foodAccessPercentage": 27.020806,
             "incarcerationRate": 616.0,
-            "laborParticipateRate": 61.0,
-            "towsend_material_deprivation": 0.331735
+            "laborParticipateRate": 61.0
         },
         {
             "id": 51111,
@@ -822,8 +768,7 @@
             "environmentalHazardIndex": -0.542343,
             "foodAccessPercentage": 37.882223,
             "incarcerationRate": 824.0,
-            "laborParticipateRate": 48.6,
-            "towsend_material_deprivation": 0.280546
+            "laborParticipateRate": 48.6
         },
         {
             "id": 51113,
@@ -837,8 +782,7 @@
             "environmentalHazardIndex": -1.066978,
             "foodAccessPercentage": 34.137458,
             "incarcerationRate": 511.0,
-            "laborParticipateRate": 60.3,
-            "towsend_material_deprivation": 0.290927
+            "laborParticipateRate": 60.3
         },
         {
             "id": 51115,
@@ -852,8 +796,7 @@
             "environmentalHazardIndex": -1.069165,
             "foodAccessPercentage": 20.81736,
             "incarcerationRate": 664.0,
-            "laborParticipateRate": 50.3,
-            "towsend_material_deprivation": 0.124018
+            "laborParticipateRate": 50.3
         },
         {
             "id": 51117,
@@ -867,8 +810,7 @@
             "environmentalHazardIndex": -0.360566,
             "foodAccessPercentage": 30.702082,
             "incarcerationRate": 1075.0,
-            "laborParticipateRate": 51.1,
-            "towsend_material_deprivation": 0.296357
+            "laborParticipateRate": 51.1
         },
         {
             "id": 51119,
@@ -882,8 +824,7 @@
             "environmentalHazardIndex": -0.970329,
             "foodAccessPercentage": 21.080936,
             "incarcerationRate": 560.0,
-            "laborParticipateRate": 54.7,
-            "towsend_material_deprivation": 0.264301
+            "laborParticipateRate": 54.7
         },
         {
             "id": 51121,
@@ -897,8 +838,7 @@
             "environmentalHazardIndex": -0.858119,
             "foodAccessPercentage": 12.641025,
             "incarcerationRate": 332.0,
-            "laborParticipateRate": 56.1,
-            "towsend_material_deprivation": 0.369077
+            "laborParticipateRate": 56.1
         },
         {
             "id": 51125,
@@ -912,8 +852,7 @@
             "environmentalHazardIndex": -1.437813,
             "foodAccessPercentage": 28.556761,
             "incarcerationRate": 619.0,
-            "laborParticipateRate": 56.4,
-            "towsend_material_deprivation": 0.302079
+            "laborParticipateRate": 56.4
         },
         {
             "id": 51127,
@@ -927,8 +866,7 @@
             "environmentalHazardIndex": -0.203518,
             "foodAccessPercentage": 12.929786,
             "incarcerationRate": 317.0,
-            "laborParticipateRate": 63.8,
-            "towsend_material_deprivation": 0.123589
+            "laborParticipateRate": 63.8
         },
         {
             "id": 51131,
@@ -942,8 +880,7 @@
             "environmentalHazardIndex": -1.347288,
             "foodAccessPercentage": 25.747096,
             "incarcerationRate": 836.0,
-            "laborParticipateRate": 51.1,
-            "towsend_material_deprivation": 0.418678
+            "laborParticipateRate": 51.1
         },
         {
             "id": 51133,
@@ -957,8 +894,7 @@
             "environmentalHazardIndex": -1.035918,
             "foodAccessPercentage": 28.030165,
             "incarcerationRate": 437.0,
-            "laborParticipateRate": 46.1,
-            "towsend_material_deprivation": 0.203919
+            "laborParticipateRate": 46.1
         },
         {
             "id": 51135,
@@ -972,8 +908,7 @@
             "environmentalHazardIndex": -0.563065,
             "foodAccessPercentage": 45.937117,
             "incarcerationRate": 1014.0,
-            "laborParticipateRate": 46.6,
-            "towsend_material_deprivation": 0.375646
+            "laborParticipateRate": 46.6
         },
         {
             "id": 51137,
@@ -987,8 +922,7 @@
             "environmentalHazardIndex": -0.75232,
             "foodAccessPercentage": 23.906922,
             "incarcerationRate": 601.0,
-            "laborParticipateRate": 61.4,
-            "towsend_material_deprivation": 0.320945
+            "laborParticipateRate": 61.4
         },
         {
             "id": 51139,
@@ -1002,8 +936,7 @@
             "environmentalHazardIndex": -1.148407,
             "foodAccessPercentage": 28.503782,
             "incarcerationRate": 984.0,
-            "laborParticipateRate": 59.8,
-            "towsend_material_deprivation": 0.297634
+            "laborParticipateRate": 59.8
         },
         {
             "id": 51141,
@@ -1017,8 +950,7 @@
             "environmentalHazardIndex": -0.993731,
             "foodAccessPercentage": 35.148235,
             "incarcerationRate": 811.0,
-            "laborParticipateRate": 54.2,
-            "towsend_material_deprivation": 0.247323
+            "laborParticipateRate": 54.2
         },
         {
             "id": 51143,
@@ -1032,8 +964,7 @@
             "environmentalHazardIndex": -0.487046,
             "foodAccessPercentage": 35.951032,
             "incarcerationRate": 786.0,
-            "laborParticipateRate": 56.0,
-            "towsend_material_deprivation": 0.320246
+            "laborParticipateRate": 56.0
         },
         {
             "id": 51145,
@@ -1047,8 +978,7 @@
             "environmentalHazardIndex": -0.501503,
             "foodAccessPercentage": 14.521455,
             "incarcerationRate": 223.0,
-            "laborParticipateRate": 57.3,
-            "towsend_material_deprivation": 0.0
+            "laborParticipateRate": 57.3
         },
         {
             "id": 51147,
@@ -1062,8 +992,7 @@
             "environmentalHazardIndex": -0.791277,
             "foodAccessPercentage": 44.011127,
             "incarcerationRate": 608.0,
-            "laborParticipateRate": 46.2,
-            "towsend_material_deprivation": 0.426523
+            "laborParticipateRate": 46.2
         },
         {
             "id": 51149,
@@ -1077,8 +1006,7 @@
             "environmentalHazardIndex": 0.107228,
             "foodAccessPercentage": 15.541718,
             "incarcerationRate": 320.0,
-            "laborParticipateRate": 58.7,
-            "towsend_material_deprivation": 0.311799
+            "laborParticipateRate": 58.7
         },
         {
             "id": 51153,
@@ -1092,8 +1020,7 @@
             "environmentalHazardIndex": 0.265928,
             "foodAccessPercentage": 7.723336,
             "incarcerationRate": 200.0,
-            "laborParticipateRate": 72.9,
-            "towsend_material_deprivation": 0.346859
+            "laborParticipateRate": 72.9
         },
         {
             "id": 51155,
@@ -1107,8 +1034,7 @@
             "environmentalHazardIndex": -0.997309,
             "foodAccessPercentage": 23.129766,
             "incarcerationRate": 1098.0,
-            "laborParticipateRate": 55.6,
-            "towsend_material_deprivation": 0.279229
+            "laborParticipateRate": 55.6
         },
         {
             "id": 51157,
@@ -1122,8 +1048,7 @@
             "environmentalHazardIndex": -1.234781,
             "foodAccessPercentage": 19.537329,
             "incarcerationRate": 339.0,
-            "laborParticipateRate": 61.3,
-            "towsend_material_deprivation": 0.234097
+            "laborParticipateRate": 61.3
         },
         {
             "id": 51159,
@@ -1137,8 +1062,7 @@
             "environmentalHazardIndex": -0.837499,
             "foodAccessPercentage": 34.59718,
             "incarcerationRate": 633.0,
-            "laborParticipateRate": 43.0,
-            "towsend_material_deprivation": 0.274207
+            "laborParticipateRate": 43.0
         },
         {
             "id": 51161,
@@ -1152,8 +1076,7 @@
             "environmentalHazardIndex": -0.647314,
             "foodAccessPercentage": 9.035213,
             "incarcerationRate": 328.0,
-            "laborParticipateRate": 61.1,
-            "towsend_material_deprivation": 0.197396
+            "laborParticipateRate": 61.1
         },
         {
             "id": 51163,
@@ -1167,8 +1090,7 @@
             "environmentalHazardIndex": -1.283787,
             "foodAccessPercentage": 32.808365,
             "incarcerationRate": 827.0,
-            "laborParticipateRate": 56.0,
-            "towsend_material_deprivation": 0.209654
+            "laborParticipateRate": 56.0
         },
         {
             "id": 51165,
@@ -1182,8 +1104,7 @@
             "environmentalHazardIndex": -1.107718,
             "foodAccessPercentage": 22.50336,
             "incarcerationRate": 505.0,
-            "laborParticipateRate": 63.6,
-            "towsend_material_deprivation": 0.249369
+            "laborParticipateRate": 63.6
         },
         {
             "id": 51167,
@@ -1197,8 +1118,7 @@
             "environmentalHazardIndex": -0.981155,
             "foodAccessPercentage": 40.754786,
             "incarcerationRate": 1021.0,
-            "laborParticipateRate": 44.2,
-            "towsend_material_deprivation": 0.311441
+            "laborParticipateRate": 44.2
         },
         {
             "id": 51169,
@@ -1212,8 +1132,7 @@
             "environmentalHazardIndex": -0.314732,
             "foodAccessPercentage": 35.588536,
             "incarcerationRate": 617.0,
-            "laborParticipateRate": 47.1,
-            "towsend_material_deprivation": 0.278001
+            "laborParticipateRate": 47.1
         },
         {
             "id": 51171,
@@ -1227,8 +1146,7 @@
             "environmentalHazardIndex": -1.130507,
             "foodAccessPercentage": 19.021693,
             "incarcerationRate": 466.0,
-            "laborParticipateRate": 61.2,
-            "towsend_material_deprivation": 0.273781
+            "laborParticipateRate": 61.2
         },
         {
             "id": 51173,
@@ -1242,8 +1160,7 @@
             "environmentalHazardIndex": -1.265378,
             "foodAccessPercentage": 34.057508,
             "incarcerationRate": 1012.0,
-            "laborParticipateRate": 50.1,
-            "towsend_material_deprivation": 0.38098
+            "laborParticipateRate": 50.1
         },
         {
             "id": 51175,
@@ -1257,8 +1174,7 @@
             "environmentalHazardIndex": -0.798074,
             "foodAccessPercentage": 17.262411,
             "incarcerationRate": 881.0,
-            "laborParticipateRate": 54.7,
-            "towsend_material_deprivation": 0.331685
+            "laborParticipateRate": 54.7
         },
         {
             "id": 51177,
@@ -1272,8 +1188,7 @@
             "environmentalHazardIndex": -0.200321,
             "foodAccessPercentage": 12.022463,
             "incarcerationRate": 480.0,
-            "laborParticipateRate": 67.6,
-            "towsend_material_deprivation": 0.295225
+            "laborParticipateRate": 67.6
         },
         {
             "id": 51179,
@@ -1287,8 +1202,7 @@
             "environmentalHazardIndex": -0.074559,
             "foodAccessPercentage": 8.902702,
             "incarcerationRate": 396.0,
-            "laborParticipateRate": 69.1,
-            "towsend_material_deprivation": 0.214879
+            "laborParticipateRate": 69.1
         },
         {
             "id": 51181,
@@ -1302,8 +1216,7 @@
             "environmentalHazardIndex": -0.7746,
             "foodAccessPercentage": 30.892705,
             "incarcerationRate": 621.0,
-            "laborParticipateRate": 59.0,
-            "towsend_material_deprivation": 0.381926
+            "laborParticipateRate": 59.0
         },
         {
             "id": 51183,
@@ -1317,8 +1230,7 @@
             "environmentalHazardIndex": -0.652629,
             "foodAccessPercentage": 25.643736,
             "incarcerationRate": 801.0,
-            "laborParticipateRate": 49.5,
-            "towsend_material_deprivation": 0.420012
+            "laborParticipateRate": 49.5
         },
         {
             "id": 51185,
@@ -1332,8 +1244,7 @@
             "environmentalHazardIndex": -1.183199,
             "foodAccessPercentage": 30.460885,
             "incarcerationRate": 1105.0,
-            "laborParticipateRate": 47.1,
-            "towsend_material_deprivation": 0.360182
+            "laborParticipateRate": 47.1
         },
         {
             "id": 51187,
@@ -1347,8 +1258,7 @@
             "environmentalHazardIndex": -0.798975,
             "foodAccessPercentage": 16.953685,
             "incarcerationRate": 510.0,
-            "laborParticipateRate": 63.7,
-            "towsend_material_deprivation": 0.390767
+            "laborParticipateRate": 63.7
         },
         {
             "id": 51191,
@@ -1362,8 +1272,7 @@
             "environmentalHazardIndex": -0.817365,
             "foodAccessPercentage": 24.086021,
             "incarcerationRate": 756.0,
-            "laborParticipateRate": 54.1,
-            "towsend_material_deprivation": 0.225116
+            "laborParticipateRate": 54.1
         },
         {
             "id": 51193,
@@ -1377,8 +1286,7 @@
             "environmentalHazardIndex": -0.725763,
             "foodAccessPercentage": 24.688749,
             "incarcerationRate": 827.0,
-            "laborParticipateRate": 56.3,
-            "towsend_material_deprivation": 0.471173
+            "laborParticipateRate": 56.3
         },
         {
             "id": 51195,
@@ -1392,8 +1300,7 @@
             "environmentalHazardIndex": -0.927221,
             "foodAccessPercentage": 31.218795,
             "incarcerationRate": 923.0,
-            "laborParticipateRate": 45.5,
-            "towsend_material_deprivation": 0.460533
+            "laborParticipateRate": 45.5
         },
         {
             "id": 51197,
@@ -1407,8 +1314,7 @@
             "environmentalHazardIndex": -1.330637,
             "foodAccessPercentage": 25.69904,
             "incarcerationRate": 817.0,
-            "laborParticipateRate": 59.3,
-            "towsend_material_deprivation": 0.239458
+            "laborParticipateRate": 59.3
         },
         {
             "id": 51199,
@@ -1422,8 +1328,7 @@
             "environmentalHazardIndex": -0.38331,
             "foodAccessPercentage": 6.868711,
             "incarcerationRate": 228.0,
-            "laborParticipateRate": 66.7,
-            "towsend_material_deprivation": 0.254267
+            "laborParticipateRate": 66.7
         },
         {
             "id": 51510,
@@ -1437,8 +1342,7 @@
             "environmentalHazardIndex": 1.961106,
             "foodAccessPercentage": 3.743621,
             "incarcerationRate": 140.0,
-            "laborParticipateRate": 78.1,
-            "towsend_material_deprivation": 0.621929
+            "laborParticipateRate": 78.1
         },
         {
             "id": 51520,
@@ -1452,8 +1356,7 @@
             "environmentalHazardIndex": -0.232338,
             "foodAccessPercentage": 17.86977,
             "incarcerationRate": 1323.0,
-            "laborParticipateRate": 58.7,
-            "towsend_material_deprivation": 0.453504
+            "laborParticipateRate": 58.7
         },
         {
             "id": 51530,
@@ -1467,8 +1370,7 @@
             "environmentalHazardIndex": -1.103964,
             "foodAccessPercentage": 48.383551,
             "incarcerationRate": 836.0,
-            "laborParticipateRate": 58.7,
-            "towsend_material_deprivation": 0.291684
+            "laborParticipateRate": 58.7
         },
         {
             "id": 51540,
@@ -1482,8 +1384,7 @@
             "environmentalHazardIndex": 0.145363,
             "foodAccessPercentage": 14.764065,
             "incarcerationRate": 507.0,
-            "laborParticipateRate": 63.8,
-            "towsend_material_deprivation": 0.53081
+            "laborParticipateRate": 63.8
         },
         {
             "id": 51550,
@@ -1497,8 +1398,7 @@
             "environmentalHazardIndex": -0.339656,
             "foodAccessPercentage": 8.659821,
             "incarcerationRate": 611.0,
-            "laborParticipateRate": 66.4,
-            "towsend_material_deprivation": 0.279593
+            "laborParticipateRate": 66.4
         },
         {
             "id": 51570,
@@ -1512,8 +1412,7 @@
             "environmentalHazardIndex": 0.469046,
             "foodAccessPercentage": 6.21234,
             "incarcerationRate": 422.0,
-            "laborParticipateRate": 63.5,
-            "towsend_material_deprivation": 0.402425
+            "laborParticipateRate": 63.5
         },
         {
             "id": 51580,
@@ -1527,8 +1426,7 @@
             "environmentalHazardIndex": -0.814388,
             "foodAccessPercentage": 10.496651,
             "incarcerationRate": 1543.0,
-            "laborParticipateRate": 51.3,
-            "towsend_material_deprivation": 0.217194
+            "laborParticipateRate": 51.3
         },
         {
             "id": 51590,
@@ -1542,8 +1440,7 @@
             "environmentalHazardIndex": 0.189093,
             "foodAccessPercentage": 10.20302,
             "incarcerationRate": 1567.0,
-            "laborParticipateRate": 53.4,
-            "towsend_material_deprivation": 0.660751
+            "laborParticipateRate": 53.4
         },
         {
             "id": 51595,
@@ -1557,8 +1454,7 @@
             "environmentalHazardIndex": 0.153461,
             "foodAccessPercentage": 1.6385,
             "incarcerationRate": 1486.0,
-            "laborParticipateRate": 64.1,
-            "towsend_material_deprivation": 1.0
+            "laborParticipateRate": 64.1
         },
         {
             "id": 51600,
@@ -1572,8 +1468,7 @@
             "environmentalHazardIndex": 0.8453,
             "foodAccessPercentage": 4.467675,
             "incarcerationRate": 136.0,
-            "laborParticipateRate": 70.5,
-            "towsend_material_deprivation": 0.328422
+            "laborParticipateRate": 70.5
         },
         {
             "id": 51610,
@@ -1587,8 +1482,7 @@
             "environmentalHazardIndex": 1.800939,
             "foodAccessPercentage": 1.3232,
             "incarcerationRate": 27.0,
-            "laborParticipateRate": 75.0,
-            "towsend_material_deprivation": 0.453868
+            "laborParticipateRate": 75.0
         },
         {
             "id": 51620,
@@ -1602,8 +1496,7 @@
             "environmentalHazardIndex": -0.534579,
             "foodAccessPercentage": 27.348657,
             "incarcerationRate": 1576.0,
-            "laborParticipateRate": 62.3,
-            "towsend_material_deprivation": 0.553722
+            "laborParticipateRate": 62.3
         },
         {
             "id": 51630,
@@ -1617,8 +1510,7 @@
             "environmentalHazardIndex": 0.49456,
             "foodAccessPercentage": 9.538062,
             "incarcerationRate": 847.0,
-            "laborParticipateRate": 69.6,
-            "towsend_material_deprivation": 0.609261
+            "laborParticipateRate": 69.6
         },
         {
             "id": 51640,
@@ -1632,8 +1524,7 @@
             "environmentalHazardIndex": -1.077917,
             "foodAccessPercentage": 4.503743,
             "incarcerationRate": 1075.0,
-            "laborParticipateRate": 58.9,
-            "towsend_material_deprivation": 0.525802
+            "laborParticipateRate": 58.9
         },
         {
             "id": 51650,
@@ -1647,8 +1538,7 @@
             "environmentalHazardIndex": -0.285781,
             "foodAccessPercentage": 12.075985,
             "incarcerationRate": 737.0,
-            "laborParticipateRate": 65.2,
-            "towsend_material_deprivation": 0.448279
+            "laborParticipateRate": 65.2
         },
         {
             "id": 51660,
@@ -1662,8 +1552,7 @@
             "environmentalHazardIndex": -0.294854,
             "foodAccessPercentage": 9.350633,
             "incarcerationRate": 639.0,
-            "laborParticipateRate": 59.8,
-            "towsend_material_deprivation": 0.595669
+            "laborParticipateRate": 59.8
         },
         {
             "id": 51670,
@@ -1677,8 +1566,7 @@
             "environmentalHazardIndex": 1.719941,
             "foodAccessPercentage": 15.315719,
             "incarcerationRate": 1345.0,
-            "laborParticipateRate": 61.2,
-            "towsend_material_deprivation": 0.655538
+            "laborParticipateRate": 61.2
         },
         {
             "id": 51678,
@@ -1692,8 +1580,7 @@
             "environmentalHazardIndex": -0.834244,
             "foodAccessPercentage": 1.694815,
             "incarcerationRate": 205.0,
-            "laborParticipateRate": 41.8,
-            "towsend_material_deprivation": 0.367025
+            "laborParticipateRate": 41.8
         },
         {
             "id": 51680,
@@ -1707,8 +1594,7 @@
             "environmentalHazardIndex": 0.022277,
             "foodAccessPercentage": 13.109776,
             "incarcerationRate": 811.0,
-            "laborParticipateRate": 59.4,
-            "towsend_material_deprivation": 0.591906
+            "laborParticipateRate": 59.4
         },
         {
             "id": 51683,
@@ -1722,8 +1608,7 @@
             "environmentalHazardIndex": 0.189859,
             "foodAccessPercentage": 3.10414,
             "incarcerationRate": 336.0,
-            "laborParticipateRate": 73.3,
-            "towsend_material_deprivation": 0.459321
+            "laborParticipateRate": 73.3
         },
         {
             "id": 51685,
@@ -1737,8 +1622,7 @@
             "environmentalHazardIndex": 0.250339,
             "foodAccessPercentage": 9.88465,
             "incarcerationRate": 243.0,
-            "laborParticipateRate": 77.9,
-            "towsend_material_deprivation": 0.539276
+            "laborParticipateRate": 77.9
         },
         {
             "id": 51690,
@@ -1752,8 +1636,7 @@
             "environmentalHazardIndex": -0.049304,
             "foodAccessPercentage": 18.810356,
             "incarcerationRate": 1787.0,
-            "laborParticipateRate": 55.5,
-            "towsend_material_deprivation": 0.439045
+            "laborParticipateRate": 55.5
         },
         {
             "id": 51700,
@@ -1767,8 +1650,7 @@
             "environmentalHazardIndex": -0.096235,
             "foodAccessPercentage": 10.316456,
             "incarcerationRate": 705.0,
-            "laborParticipateRate": 67.7,
-            "towsend_material_deprivation": 0.562535
+            "laborParticipateRate": 67.7
         },
         {
             "id": 51710,
@@ -1782,8 +1664,7 @@
             "environmentalHazardIndex": 0.222675,
             "foodAccessPercentage": 14.345752,
             "incarcerationRate": 1106.0,
-            "laborParticipateRate": 70.8,
-            "towsend_material_deprivation": 0.63707
+            "laborParticipateRate": 70.8
         },
         {
             "id": 51720,
@@ -1797,8 +1678,7 @@
             "environmentalHazardIndex": -0.81103,
             "foodAccessPercentage": 21.880134,
             "incarcerationRate": 1259.0,
-            "laborParticipateRate": 52.6,
-            "towsend_material_deprivation": 0.502103
+            "laborParticipateRate": 52.6
         },
         {
             "id": 51730,
@@ -1812,8 +1692,7 @@
             "environmentalHazardIndex": 0.4952,
             "foodAccessPercentage": 37.792661,
             "incarcerationRate": 1632.0,
-            "laborParticipateRate": 62.2,
-            "towsend_material_deprivation": 0.899858
+            "laborParticipateRate": 62.2
         },
         {
             "id": 51735,
@@ -1827,8 +1706,7 @@
             "environmentalHazardIndex": -0.829701,
             "foodAccessPercentage": 8.988842,
             "incarcerationRate": 208.0,
-            "laborParticipateRate": 63.8,
-            "towsend_material_deprivation": 0.079647
+            "laborParticipateRate": 63.8
         },
         {
             "id": 51740,
@@ -1842,8 +1720,7 @@
             "environmentalHazardIndex": 0.065524,
             "foodAccessPercentage": 18.601419,
             "incarcerationRate": 1322.0,
-            "laborParticipateRate": 63.5,
-            "towsend_material_deprivation": 0.515664
+            "laborParticipateRate": 63.5
         },
         {
             "id": 51750,
@@ -1857,8 +1734,7 @@
             "environmentalHazardIndex": -0.599542,
             "foodAccessPercentage": 17.970092,
             "incarcerationRate": 495.0,
-            "laborParticipateRate": 55.1,
-            "towsend_material_deprivation": 0.480187
+            "laborParticipateRate": 55.1
         },
         {
             "id": 51760,
@@ -1872,8 +1748,7 @@
             "environmentalHazardIndex": 1.152198,
             "foodAccessPercentage": 12.135824,
             "incarcerationRate": 1092.0,
-            "laborParticipateRate": 66.6,
-            "towsend_material_deprivation": 0.661936
+            "laborParticipateRate": 66.6
         },
         {
             "id": 51770,
@@ -1887,8 +1762,7 @@
             "environmentalHazardIndex": -0.131486,
             "foodAccessPercentage": 13.441903,
             "incarcerationRate": 1038.0,
-            "laborParticipateRate": 64.7,
-            "towsend_material_deprivation": 0.572427
+            "laborParticipateRate": 64.7
         },
         {
             "id": 51775,
@@ -1902,8 +1776,7 @@
             "environmentalHazardIndex": -0.404202,
             "foodAccessPercentage": 3.795678,
             "incarcerationRate": 477.0,
-            "laborParticipateRate": 61.5,
-            "towsend_material_deprivation": 0.368861
+            "laborParticipateRate": 61.5
         },
         {
             "id": 51790,
@@ -1917,8 +1790,7 @@
             "environmentalHazardIndex": -0.656043,
             "foodAccessPercentage": 2.11012,
             "incarcerationRate": 946.0,
-            "laborParticipateRate": 61.1,
-            "towsend_material_deprivation": 0.377152
+            "laborParticipateRate": 61.1
         },
         {
             "id": 51800,
@@ -1932,8 +1804,7 @@
             "environmentalHazardIndex": -0.742719,
             "foodAccessPercentage": 11.73783,
             "incarcerationRate": 843.0,
-            "laborParticipateRate": 67.4,
-            "towsend_material_deprivation": 0.37254
+            "laborParticipateRate": 67.4
         },
         {
             "id": 51810,
@@ -1947,8 +1818,7 @@
             "environmentalHazardIndex": -0.373969,
             "foodAccessPercentage": 7.695703,
             "incarcerationRate": 396.0,
-            "laborParticipateRate": 70.5,
-            "towsend_material_deprivation": 0.30015
+            "laborParticipateRate": 70.5
         },
         {
             "id": 51820,
@@ -1962,8 +1832,7 @@
             "environmentalHazardIndex": -0.633552,
             "foodAccessPercentage": 9.262426,
             "incarcerationRate": 1079.0,
-            "laborParticipateRate": 63.3,
-            "towsend_material_deprivation": 0.370771
+            "laborParticipateRate": 63.3
         },
         {
             "id": 51830,
@@ -1977,8 +1846,7 @@
             "environmentalHazardIndex": -0.311023,
             "foodAccessPercentage": 8.244739,
             "incarcerationRate": 422.0,
-            "laborParticipateRate": 50.5,
-            "towsend_material_deprivation": 0.418196
+            "laborParticipateRate": 50.5
         },
         {
             "id": 51840,
@@ -1992,8 +1860,7 @@
             "environmentalHazardIndex": 0.242925,
             "foodAccessPercentage": 5.418219,
             "incarcerationRate": 548.0,
-            "laborParticipateRate": 66.6,
-            "towsend_material_deprivation": 0.513934
+            "laborParticipateRate": 66.6
         }
     ]
 }
