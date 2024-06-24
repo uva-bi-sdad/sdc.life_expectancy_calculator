@@ -21,10 +21,18 @@ L.Icon.Default.mergeOptions({
 
 
 
-const fetchData = async (id, onDataFetch) => {
+const fetchData = async (id, onDataFetch, vadivisions) => {
     console.log(id)
+    console.log(vadivisions)
+    var response;
     try {
-        const response = await fetch(`http://localhost:3001/dataCounties?id=${id}`)
+        if (vadivisions === "counties") {
+             response = await fetch(`http://localhost:3001/dataCounties?id=${id}`)
+        }
+        else {
+             response = await fetch(`http://localhost:3001/dataCensusTracks?id=${id}`)
+        }
+        
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
@@ -42,7 +50,8 @@ let clickedLayer = null;
 const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
     layer.on({
         click: (e) => {
-            console.log("vadivisions",vadivisions);
+            console.log("vadivisions", vadivisions);
+            
             const currentLayer = e.target;
 
             // Check if there's a previously clicked layer
@@ -75,9 +84,10 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                 permanent: true,
                 direction: "auto"
             }).openTooltip();
-
+            console.log("id", feature.properties)
             if (feature.properties && feature.properties.id) {
-                fetchData(feature.properties.id, onDataFetch);
+                console.log("id", feature.properties.id);
+                fetchData(feature.properties.id, onDataFetch, vadivisions);
             }
 
             // Prevent event propagation to avoid triggering mouseout event
@@ -121,29 +131,29 @@ const Leaflet = ({ onDataFetch }) => {
         console.log(mapData)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        const preFetchData = async() =>{
+        const preFetchData = async () => {
             await Promise.all([
-                fetchData('counties', () => {}),
-                fetchData('censusTracks', () => {}),
+                fetchData('counties', () => { }),
+                fetchData('censusTracks', () => { }),
             ]);
         };
         preFetchData();
-    },[]);
+    }, []);
 
     return (
         <div>
             <div>
                 <label htmlFor="mapFilter"></label>
-                <select id="mapFilter"  value={vadivisions} onChange={handleFilter} >
+                <select id="mapFilter" value={vadivisions} onChange={handleFilter} >
                     <option value="counties">Counties</option>
                     <option value="censusTracks">Census Tracks</option>
                 </select>
             </div>
             <div style={{ paddingBottom: '50px' }} />
 
-            <MapContainer center={{ lat: 37.4, lng: -78.6 }} zoom={6} scrollWheelZoom={false} style={{ height: "50vh", width: "100%" }}>
+            <MapContainer center={{ lat: 37.4, lng: -78.6 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
