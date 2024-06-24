@@ -6,7 +6,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
 import VirginiaGeoJson from './components/VACountiesJson';
 import VirginiaCensusTracks from './components/VACensusTracks';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -39,9 +39,10 @@ const fetchData = async (id, onDataFetch) => {
 }
 let clickedLayer = null;
 
-const onEachFeature = (feature, layer, onDataFetch) => {
+const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
     layer.on({
         click: (e) => {
+            console.log("vadivisions",vadivisions);
             const currentLayer = e.target;
 
             // Check if there's a previously clicked layer
@@ -111,14 +112,33 @@ const onEachFeature = (feature, layer, onDataFetch) => {
 
 
 const Leaflet = ({ onDataFetch }) => {
-    const [vadivisions, updateVadivisions] = useState(null)
+    const [vadivisions, updateVadivisions] = useState('counties')
+    const [mapData, updateMapData] = useState(VirginiaGeoJson)
+    const handleFilter = (event) => {
+        const selectedValue = event.target.value
+        updateVadivisions(selectedValue)
+        updateMapData(selectedValue === "counties" ? VirginiaGeoJson : VirginiaCensusTracks)
+        console.log(mapData)
+    }
+
+    useEffect(()=>{
+
+        const preFetchData = async() =>{
+            await Promise.all([
+                fetchData('counties', () => {}),
+                fetchData('censusTracks', () => {}),
+            ]);
+        };
+        preFetchData();
+    },[]);
+
     return (
         <div>
             <div>
-                <label htmlFor="yearFilter"></label>
-                <select id="yearFilter" >
-                    <option value="2020">Counties</option>
-                    <option value="2021">Census Tracks</option>
+                <label htmlFor="mapFilter"></label>
+                <select id="mapFilter"  value={vadivisions} onChange={handleFilter} >
+                    <option value="counties">Counties</option>
+                    <option value="censusTracks">Census Tracks</option>
                 </select>
             </div>
             <div style={{ paddingBottom: '50px' }} />
@@ -128,7 +148,8 @@ const Leaflet = ({ onDataFetch }) => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <GeoJSON data={VirginiaGeoJson} style={{ stroke: "#000000", color: 'green', weight: 1.5, fillOpacity: 0 }} onEachFeature={(feature, layer) => onEachFeature(feature, layer, onDataFetch)} />
+                <GeoJSON
+                    key={JSON.stringify(mapData)} data={mapData} style={{ stroke: "#000000", color: 'green', weight: 0.5, fillOpacity: 0 }} onEachFeature={(feature, layer) => onEachFeature(feature, layer, onDataFetch, vadivisions)} />
                 {/* <Marker position={[51.505, -0.09]}>
                 <Popup>
                     A pretty CSS3 popup. <br /> Easily customizable.
