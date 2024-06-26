@@ -6,6 +6,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
 import VirginiaGeoJson from './components/VACountiesJson';
 import VirginiaCensusTracks from './components/VACensusTracks';
+import dataCensusTracks from './data/dataCensusTracks.json'
 import { useEffect, useState } from 'react';
 
 
@@ -78,12 +79,33 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                 strokeWidth: 1,
                 fillOpacity: 1
             });
-
+            
             // Bind and open tooltip
-            currentLayer.bindTooltip(feature.properties.name, {
-                permanent: true,
-                direction: "auto"
-            }).openTooltip();
+            if (vadivisions == "counties") {
+                const censusTracks = dataCensusTracks.census.filter(item => String(item.id).substring(0, 5) == String(feature.properties.id));
+                const tracks = censusTracks.map(track => (track.name).substring((track.name).indexOf('t') + 2, (track.name).indexOf(',')))
+                const trackList = []
+
+                for (let i = 0; i < tracks.length; i += 6) {
+                    trackList.push(tracks.slice(i, i + 6).join(', '));
+                }
+
+                console.log(tracks)
+                currentLayer.bindTooltip(`${feature.properties.name} <br>Census Tract(s): ${trackList.join('<br> ')}`, {
+                    permanent: true,
+                    direction: "auto"
+                }).openTooltip();
+            }
+
+            if (vadivisions == "censusTracks") {
+                const censusTrack = dataCensusTracks.census.find(item => item.id == feature.properties.id);
+
+                currentLayer.bindTooltip(`${(censusTrack.name).substring(0, (censusTrack.name).lastIndexOf(', Virginia'))}`, {
+                    permanent: true,
+                    direction: "auto"
+                }).openTooltip();
+            }
+            
             console.log("id", feature.properties)
             if (feature.properties && feature.properties.id) {
                 console.log("id", feature.properties.id);
