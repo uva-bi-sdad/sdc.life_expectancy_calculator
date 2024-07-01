@@ -33,41 +33,41 @@ function App() {
   };
 
   const calculateSum = () => {
-    const sum = ((((sliderValues.id6 - 3.17) / (16 - 3.17)) * 0.097) +
-      (((sliderValues.id10 - (-2.15)) / (2.58 - (-2.15))) * 0.096) +
-      (((sliderValues.id11 - 1.32) / (48.38 - 1.32)) * 0.041) +
-      (((sliderValues.id3 - 1530) / (130244 - 1530)) * 0.015) +
-      (((sliderValues.id4 - 37) / (78.90 - 37)) * 0.06) +
-      (((sliderValues.id8 - 0.18) / (0.82 - 0.18)) * 0.002) +
-      (((sliderValues.id14 - 27) / (1787 - 27)) * 0.347) +
-      (((sliderValues.id2 - 11.90) / (16.26 - 11.90)) * 0.160) +
-      (((sliderValues.id7 - 0.09) / (316.67 - 0.09)) * 0.050) +
+    const sum = ((((sliderValues.id6 - 1.60) / (18.83 - 1.60)) * 0.097) +
+      ((((sliderValues.id10 - (-3.24)) / (4.38 - (-3.24)))) * 0.096) +
+      ((((sliderValues.id11 - (-25.00)) / (94.52 - (-25.00)))) * 0.041) +
+      (((sliderValues.id3 - 1418) / (1237164 - 1530)) * 0.015) +
+      (((sliderValues.id4 - 0) / (100 - 0)) * 0.06) +
+      ((1-((sliderValues.id8 - 0.18) / (0.82 - 0.18))) * 0.002) +
+      ((1-((sliderValues.id14 - 0) / (22222.00 - 0))) * 0.347) +
+      (((sliderValues.id2 - 8.44) / (19.00 - 8.44)) * 0.160) +
+      (((sliderValues.id7 - 0) / (1.68 - 0)) * 0.050) +
       // (sliderValues.id1*0) +
-      (((sliderValues.id13 - 4.04) / (31.79 - 4.04)) * 0.030) +
-      (((sliderValues.id9 - 29) / (76 - 29)) * 0.001) +
+      ((((sliderValues.id13 - 0) / (100 - 0))) * 0.030) +
+      ((((sliderValues.id9 - 10) / (86 - 10))) * 0.001) +
       // (sliderValues.id5*0) +
-      (((sliderValues.id12 - 0) / (1)) * 0.101)) * 100
+      ((((sliderValues.id12 - 0) / (1)) * 0.101))) * 100
 
     setCalculatedValue(sum.toFixed(1))
   };
-  const calculateSumCensusTracks = () => {
-    const sum = ((((sliderValues.id6 - 3.17) / (16 - 3.17)) * 0.097) +
-      (((sliderValues.id10 - (-2.15)) / (2.58 - (-2.15))) * 0.096) +
-      (((sliderValues.id11 - 1.32) / (48.38 - 1.32)) * 0.041) +
-      (((sliderValues.id3 - 1530) / (130244 - 1530)) * 0.015) +
-      (((sliderValues.id4 - 37) / (78.90 - 37)) * 0.06) +
-      (((sliderValues.id8 - 0.18) / (0.82 - 0.18)) * 0.002) +
-      (((sliderValues.id14 - 27) / (1787 - 27)) * 0.347) +
-      (((sliderValues.id2 - 11.90) / (16.26 - 11.90)) * 0.160) +
-      (((sliderValues.id7 - 0.09) / (316.67 - 0.09)) * 0.050) +
-      // (sliderValues.id1*0) +
-      (((sliderValues.id13 - 4.04) / (31.79 - 4.04)) * 0.030) +
-      (((sliderValues.id9 - 29) / (76 - 29)) * 0.001) +
-      // (sliderValues.id5*0) +
-      (((sliderValues.id12 - 0) / (1)) * 0.101)) * 100
+  // const calculateSumCensusTracks = () => {
+  //   const sum = ((((sliderValues.id6 - 3.17) / (16 - 3.17)) * 0.097) +
+  //     (((sliderValues.id10 - (-2.15)) / (2.58 - (-2.15))) * 0.096) +
+  //     (((sliderValues.id11 - 1.32) / (48.38 - 1.32)) * 0.041) +
+  //     (((sliderValues.id3 - 1530) / (130244 - 1530)) * 0.015) +
+  //     (((sliderValues.id4 - 37) / (78.90 - 37)) * 0.06) +
+  //     (((sliderValues.id8 - 0.18) / (0.82 - 0.18)) * 0.002) +
+  //     (((sliderValues.id14 - 27) / (1787 - 27)) * 0.347) +
+  //     (((sliderValues.id2 - 11.90) / (16.26 - 11.90)) * 0.160) +
+  //     (((sliderValues.id7 - 0.09) / (316.67 - 0.09)) * 0.050) +
+  //     // (sliderValues.id1*0) +
+  //     (((sliderValues.id13 - 4.04) / (31.79 - 4.04)) * 0.030) +
+  //     (((sliderValues.id9 - 29) / (76 - 29)) * 0.001) +
+  //     // (sliderValues.id5*0) +
+  //     (((sliderValues.id12 - 0) / (1)) * 0.101)) * 100
 
-    setCalculatedValue(sum.toFixed(1))
-  };
+  //   setCalculatedValue(sum.toFixed(1))
+  // };
 
   // const calculateSum = () => {
   //   const sum = ((sliderValues.id6 * 0.097) +

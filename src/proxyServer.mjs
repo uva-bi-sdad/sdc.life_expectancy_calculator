@@ -56,6 +56,32 @@ app.get('/dataCensusTracks', async (req, res) => {
     }
 });
 
+app.get('/dataCountiesWithCensusTracks', async (req, res) => {
+    try {
+        const { countyId } = req.query;
+        console.log(`Fetching data for county ID: ${countyId}`);
+
+        const response = await fetch('http://localhost:8000/dataCensusTracks.json');
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+
+        const Jsondata = await response.json()
+        const data = Jsondata.census
+        console.log('Fetched data:', data);
+        // Filter census tracts based on the county ID
+        const filteredCensusTracks = data.filter(censusTrack => censusTrack.id.toString().startsWith(countyId));
+        res.json(filteredCensusTracks);
+
+
+    }
+    catch (error) {
+        console.error('Error fetching data:', error);
+        res.status(500).json({ error: 'An error occurred while fetching data' });
+    }
+})
+
 
 app.listen(port, () => {
     console.log(`Proxy server listening at http://localhost:${port}`);
