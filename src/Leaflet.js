@@ -20,7 +20,42 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow,
 });
 
+const average =  (countyData,id) => {
+    if (countyData.length === 0) return {};
+    console.log("county",countyData);
+    const features = [
+        "gini",
+        "averageYearsSchooling",
+        "employmentAccessIndex",
+        "walkabilityIndex",
+        "segregationIndicator",
+        "affordabilityIndex",
+        "environmentalHazardIndex",
+        "foodAccessPercentage",
+        "incarcerationRate",
+        "laborParticipateRate",
+        "towsend_material_deprivation",
+        "mobility"
+    ];
 
+    const totals = features.reduce((acc, feature) => {
+        acc[feature] = 0;
+        return acc;
+    }, {});
+
+    countyData.forEach((tract) => {
+        features.forEach((feature) => {
+            totals[feature] += tract[feature];
+        });
+    });
+
+    const averages = features.reduce((acc, feature) => {
+        acc[feature] = totals[feature] / countyData.length;
+        return acc;
+    }, {});
+    averages["id"]=id
+     return averages;
+};
 
 const fetchData = async (id, onDataFetch, vadivisions) => {
     console.log(id)
@@ -28,18 +63,25 @@ const fetchData = async (id, onDataFetch, vadivisions) => {
     var response;
     try {
         if (vadivisions === "counties") {
-             response = await fetch(`http://localhost:3001/dataCounties?id=${id}`)
+            response = await fetch(`http://localhost:3001/dataCountiesWithCensusTracks?countyId=${id}`)
+            const data = await response.json()
+            const avg=average(data,id)
+            console.log("datain", data)
+            console.log("datain", avg)
+            onDataFetch(avg)
         }
         else {
-             response = await fetch(`http://localhost:3001/dataCensusTracks?id=${id}`)
+            response = await fetch(`http://localhost:3001/dataCensusTracks?id=${id}`)
+            const data = await response.json()
+            onDataFetch(data)
         }
-        
+
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
-        const data = await response.json()
-        onDataFetch(data)
-        console.log('Fetched data:', data);
+        // const data = await response.json()
+        // onDataFetch(data)
+        // console.log('Fetched data:', data);
 
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
@@ -52,7 +94,7 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
     layer.on({
         click: (e) => {
             console.log("vadivisions", vadivisions);
-            
+
             const currentLayer = e.target;
 
             // Check if there's a previously clicked layer
@@ -79,7 +121,7 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                 strokeWidth: 1,
                 fillOpacity: 1
             });
-            
+
             // Bind and open tooltip
             if (vadivisions == "counties") {
                 const censusTracks = dataCensusTracks.census.filter(item => String(item.id).substring(0, 5) == String(feature.properties.id));
@@ -105,7 +147,7 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                     direction: "auto"
                 }).openTooltip();
             }
-            
+
             console.log("id", feature.properties)
             if (feature.properties && feature.properties.id) {
                 console.log("id", feature.properties.id);
@@ -157,8 +199,8 @@ const Leaflet = ({ onDataFetch }) => {
 
         const preFetchData = async () => {
             await Promise.all([
-                fetchData('counties', () => { }),
-                fetchData('censusTracks', () => { }),
+                fetchData(51770, onDataFetch, "counties")
+                
             ]);
         };
         preFetchData();
