@@ -91,7 +91,7 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                 }
 
                 console.log(tracks)
-                currentLayer.bindTooltip(`${feature.properties.name} <br>Census Tract(s): ${trackList.join('<br> ')}`, {
+                currentLayer.bindTooltip(`${feature.properties.name} <br> ${trackList.join('<br> ')}`, {
                     permanent: true,
                     direction: "auto"
                 }).openTooltip();
