@@ -23,8 +23,8 @@ L.Icon.Default.mergeOptions({
 
 
 const fetchData = async (id, onDataFetch, vadivisions) => {
-    console.log(id)
-    console.log(vadivisions)
+    console.log("id: " + id)
+    console.log("vadivisions: " + vadivisions)
     var response;
     try {
         if (vadivisions === "counties") {
@@ -145,24 +145,33 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
 
 const Leaflet = ({ onDataFetch }) => {
     const [vadivisions, updateVadivisions] = useState('counties')
-    const [mapData, updateMapData] = useState(VirginiaGeoJson)
+    const [mapData, updateMapData] = useState(null)
+    const [countiesData, setCountiesData] = useState(null);
+    const [censusTracksData, setCensusTracksData] = useState(null);
+    
+
+    useEffect(() => {
+        console.log("UseEffect is running!")
+
+        setCountiesData(VirginiaGeoJson)
+        setCensusTracksData(VirginiaCensusTracks)
+        updateMapData(VirginiaGeoJson)
+
+        //const preFetchData = async () => {
+            //await Promise.all([
+                //fetchData('counties', () => { }),
+                //fetchData('censusTracks', () => { }),
+            //]);
+        //};
+        //preFetchData();
+    }, []);
+
     const handleFilter = (event) => {
         const selectedValue = event.target.value
         updateVadivisions(selectedValue)
-        updateMapData(selectedValue === "counties" ? VirginiaGeoJson : VirginiaCensusTracks)
+        updateMapData(selectedValue === "counties" ? countiesData : censusTracksData)
         console.log(mapData)
     }
-
-    useEffect(() => {
-
-        const preFetchData = async () => {
-            await Promise.all([
-                fetchData('counties', () => { }),
-                fetchData('censusTracks', () => { }),
-            ]);
-        };
-        preFetchData();
-    }, []);
 
     return (
         <div>
