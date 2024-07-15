@@ -177,7 +177,7 @@ const Leaflet = ({ onDataFetch }) => {
             <div style={{ paddingBottom: '50px' }} />
 
             <MapContainer center={{ lat: 37.9, lng: -78.8 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
-            <LayersControl position="topright">
+            <LayersControl position="topright" collapsed={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
