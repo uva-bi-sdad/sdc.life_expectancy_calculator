@@ -159,22 +159,14 @@ const Leaflet = ({ onDataFetch }) => {
 
     const handleFilter = (event) => {
         const selectedValue = event.target.value
-        updateVadivisions(selectedValue)
-        updateMapData(selectedValue === "counties" ? countiesData : censusTracksData)
+        //updateVadivisions(selectedValue)
+        //updateMapData(selectedValue === "counties" ? countiesData : censusTracksData)
         console.log(mapData)
     }
 
     return (
         <div>
-            <div style={{ paddingBottom: '50px' }} />
-            <div>
-                <label htmlFor="mapFilter"></label>
-                <select id="mapFilter" value={vadivisions} onChange={handleFilter} >
-                    <option value="counties">Counties</option>
-                    <option value="censusTracks">Census Tracks</option>
-                </select>
-            </div>
-            <div style={{ paddingBottom: '50px' }} />
+            <div style={{ paddingBottom: '75px' }} />
 
             <MapContainer center={{ lat: 37.9, lng: -78.8 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
             <LayersControl position="topright" collapsed={false}>
