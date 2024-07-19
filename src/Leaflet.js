@@ -1,5 +1,5 @@
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, GeoJSON, LayersControl } from 'react-leaflet';
 import L from 'leaflet';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -8,8 +8,6 @@ import VirginiaGeoJson from './components/VACountiesJson';
 import VirginiaCensusTracks from './components/VACensusTracks';
 import dataCensusTracks from './data/dataCensusTracks.json'
 import { useEffect, useState } from 'react';
-
-
 
 
 // Fix default icon paths
@@ -58,8 +56,8 @@ const average =  (countyData,id) => {
 };
 
 const fetchData = async (id, onDataFetch, vadivisions) => {
-    console.log(id)
-    console.log(vadivisions)
+    console.log("id: " + id)
+    console.log("vadivisions: " + vadivisions)
     var response;
     try {
         if (vadivisions === "counties") {
@@ -133,7 +131,7 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
                 }
 
                 console.log(tracks)
-                currentLayer.bindTooltip(`${feature.properties.name} <br>Census Tract(s): ${trackList.join('<br> ')}`, {
+                currentLayer.bindTooltip(`${feature.properties.name} <br> ${trackList.join('<br> ')}`, {
                     permanent: true,
                     direction: "auto"
                 }).openTooltip();
@@ -187,51 +185,60 @@ const onEachFeature = (feature, layer, onDataFetch, vadivisions) => {
 
 const Leaflet = ({ onDataFetch }) => {
     const [vadivisions, updateVadivisions] = useState('counties')
-    const [mapData, updateMapData] = useState(VirginiaGeoJson)
+    const [mapData, updateMapData] = useState(null)
+    const [countiesData, setCountiesData] = useState(null);
+    const [censusTracksData, setCensusTracksData] = useState(null);
+    
+
+    useEffect(() => {
+        console.log("UseEffect is running!")
+
+        setCountiesData(VirginiaGeoJson)
+        setCensusTracksData(VirginiaCensusTracks)
+        updateMapData(VirginiaGeoJson)
+    }, []);
+
     const handleFilter = (event) => {
         const selectedValue = event.target.value
-        updateVadivisions(selectedValue)
-        updateMapData(selectedValue === "counties" ? VirginiaGeoJson : VirginiaCensusTracks)
+        //updateVadivisions(selectedValue)
+        //updateMapData(selectedValue === "counties" ? countiesData : censusTracksData)
         console.log(mapData)
     }
 
-    useEffect(() => {
-
-        const preFetchData = async () => {
-            await Promise.all([
-                fetchData(51770, onDataFetch, "counties")
-                
-            ]);
-        };
-        preFetchData();
-    }, []);
-
     return (
         <div>
-            <div>
-                <label htmlFor="mapFilter"></label>
-                <select id="mapFilter" value={vadivisions} onChange={handleFilter} >
-                    <option value="counties">Counties</option>
-                    <option value="censusTracks">Census Tracks</option>
-                </select>
-            </div>
-            <div style={{ paddingBottom: '50px' }} />
+            <div style={{ paddingBottom: '75px' }} />
 
-            <MapContainer center={{ lat: 37.4, lng: -78.6 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
+            <MapContainer center={{ lat: 37.9, lng: -78.8 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
+            <LayersControl position="topright" collapsed={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <GeoJSON
-                    key={JSON.stringify(mapData)} data={mapData} style={{ stroke: "#000000", color: 'green', weight: 0.5, fillOpacity: 0 }} onEachFeature={(feature, layer) => onEachFeature(feature, layer, onDataFetch, vadivisions)} />
-                {/* <Marker position={[51.505, -0.09]}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker> */}
+                <LayersControl.BaseLayer checked name="Counties">
+                    <GeoJSON
+                        key={JSON.stringify(countiesData)}
+                        data={countiesData}
+                        style={{ stroke: "#000000", color: 'green', weight: 0.5, fillOpacity: 0 }}
+                        onEachFeature={(feature, layer) => onEachFeature(feature, layer, onDataFetch, 'counties')}
+                    />
+                </LayersControl.BaseLayer>
+                <LayersControl.BaseLayer name="Census Tracks">
+                    <GeoJSON
+                        key={JSON.stringify(censusTracksData)}
+                        data={censusTracksData}
+                        style={{ stroke: "#000000", color: 'green', weight: 0.5, fillOpacity: 0 }}
+                        onEachFeature={(feature, layer) => onEachFeature(feature, layer, onDataFetch, 'censusTracks')}
+                    />
+                </LayersControl.BaseLayer>
+            </LayersControl>
             </MapContainer>
-            <div style={{ paddingTop: '50px' }} />
+
+            <div style={{ paddingTop: '30px' }} />
         </div>
+
+
+        
     );
 }
 
