@@ -114,6 +114,8 @@ function App() {
       calculateSum();
     }
     console.log(data.gini);
+    console.log(typeof data.gini);
+
   };
 
   return (
