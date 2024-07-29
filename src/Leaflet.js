@@ -189,7 +189,7 @@ const Leaflet = ({ onDataFetch }) => {
     const [countiesData, setCountiesData] = useState(null);
     const [censusTracksData, setCensusTracksData] = useState(null);
 
-    const [selectedYear, setSelectedYear] = useState(2021);
+    const [selectedYear, setSelectedYear] = useState(2018);
     
     useEffect(() => {
         console.log("UseEffect is running!")
@@ -198,6 +198,18 @@ const Leaflet = ({ onDataFetch }) => {
         setCensusTracksData(VirginiaCensusTracks)
         updateMapData(VirginiaGeoJson)
     }, []);
+
+    const handleNextYear = () => {
+        if (selectedYear < 2021) {
+            setSelectedYear(prevYear => prevYear + 1);
+        }
+    };
+
+    const handlePreviousYear = () => {
+        if (selectedYear > 2015) {
+            setSelectedYear(prevYear => prevYear - 1);
+        }
+    };
 
     const handleFilter = (event) => {
         const selectedValue = event.target.value
@@ -210,12 +222,14 @@ const Leaflet = ({ onDataFetch }) => {
         <div>
             <div style={{ paddingBottom: '75px' }} />
 
+            <div style={{ marginBottom: '8px', fontSize: '12px'  }}>Selected Year</div>
+
             <div id="yearButtons" style={{ marginBottom: '40px' }}>
-                <span style={{ margin: '0 10px' }}>2015</span>
-                <button >&larr;</button>
-                <span style={{ margin: '0 10px' }}>{selectedYear}</span>
-                <button >&rarr;</button>
-                <span style={{ margin: '0 10px' }}>2021</span>
+                <span style={{ margin: '0 10px', fontSize: '14px' }}>2015</span>
+                <button style={{ backgroundColor: 'white', border: '1px solid #ccc', padding: '8px 6px' }} onClick={handlePreviousYear}> &lt; </button>
+                <span style={{ margin: '0 12px', fontSize: '25px' }}><b>{selectedYear}</b></span>
+                <button style={{ backgroundColor: 'white', border: '1px solid #ccc', padding: '8px 6px' }} onClick={handleNextYear}> &gt; </button>
+                <span style={{ margin: '0 10px', fontSize: '14px' }}>2021</span>
             </div>
 
             <MapContainer center={{ lat: 37.9, lng: -78.8 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
