@@ -188,8 +188,9 @@ const Leaflet = ({ onDataFetch }) => {
     const [mapData, updateMapData] = useState(null)
     const [countiesData, setCountiesData] = useState(null);
     const [censusTracksData, setCensusTracksData] = useState(null);
-    
 
+    const [selectedYear, setSelectedYear] = useState(2021);
+    
     useEffect(() => {
         console.log("UseEffect is running!")
 
@@ -209,12 +210,21 @@ const Leaflet = ({ onDataFetch }) => {
         <div>
             <div style={{ paddingBottom: '75px' }} />
 
+            <div id="yearButtons" style={{ marginBottom: '40px' }}>
+                <span style={{ margin: '0 10px' }}>2015</span>
+                <button >&larr;</button>
+                <span style={{ margin: '0 10px' }}>{selectedYear}</span>
+                <button >&rarr;</button>
+                <span style={{ margin: '0 10px' }}>2021</span>
+            </div>
+
             <MapContainer center={{ lat: 37.9, lng: -78.8 }} zoom={6.5} scrollWheelZoom={false} style={{ height: "70vh", width: "100vh" }}>
             <LayersControl position="topright" collapsed={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
+
                 <LayersControl.BaseLayer checked name="Counties">
                     <GeoJSON
                         key={JSON.stringify(countiesData)}
@@ -237,8 +247,6 @@ const Leaflet = ({ onDataFetch }) => {
             <div style={{ paddingTop: '30px' }} />
         </div>
 
-
-        
     );
 }
 
