@@ -58,10 +58,12 @@ const average =  (countyData,id) => {
 const fetchData = async (id, onDataFetch, vadivisions) => {
     console.log("id: " + id)
     console.log("vadivisions: " + vadivisions)
+    const year = 2015
+
     var response;
     try {
         if (vadivisions === "counties") {
-            response = await fetch(`http://localhost:3001/dataCountiesWithCensusTracks?countyId=${id}`)
+            response = await fetch(`http://localhost:3001/dataCountiesWithCensusTracks?countyId=${id}&year=${year}`)
             const data = await response.json()
             const avg=average(data,id)
             console.log("datain", data)
@@ -69,7 +71,7 @@ const fetchData = async (id, onDataFetch, vadivisions) => {
             onDataFetch(avg)
         }
         else {
-            response = await fetch(`http://localhost:3001/dataCensusTracks?id=${id}`)
+            response = await fetch(`http://localhost:3001/dataCensusTracks?id=${id}&year=${year}`)
             const data = await response.json()
             onDataFetch(data)
         }
