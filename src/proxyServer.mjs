@@ -33,17 +33,17 @@ app.get('/dataCounties', async (req, res) => {
 
 app.get('/dataCensusTracks', async (req, res) => {
     try {
-        const { id } = req.query;
-        console.log(`Fetching data for ID: ${id}`); // Logging the ID
+        const { id, year } = req.query;
+        console.log(`Fetching data for county ID and year: ${id}, ${year}`);
 
-        const response = await fetch('http://localhost:8000/dataCensusTracks.json');
+        const response = await fetch('http://localhost:8000/census_yearly_data.json');
 
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
 
         const data = await response.json();
-        const censusTrack = data.census.find(census => census.id === parseInt(id, 10));
+        const censusTrack = data.census.find(census => census.id === parseInt(id, 10) && census.year === parseInt(year));
         if (!censusTrack) {
             return res.status(404).json({ error: 'censusTrack not found' });
         }
@@ -58,20 +58,20 @@ app.get('/dataCensusTracks', async (req, res) => {
 
 app.get('/dataCountiesWithCensusTracks', async (req, res) => {
     try {
-        const { countyId } = req.query;
-        console.log(`Fetching data for county ID: ${countyId}`);
+        const { countyId, year } = req.query;
 
-        const response = await fetch('http://localhost:8000/dataCensusTracks.json');
-
+        const response = await fetch('http://localhost:8000/census_yearly_data.json');
+        
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
 
         const Jsondata = await response.json()
         const data = Jsondata.census
-        console.log('Fetched data:', data);
+        console.log(`Fetching data for county ID and year: ${countyId}, ${year}`);
         // Filter census tracts based on the county ID
-        const filteredCensusTracks = data.filter(censusTrack => censusTrack.id.toString().startsWith(countyId));
+        const filteredCensusTracks = data.filter(
+            censusTrack => censusTrack.id.toString().startsWith(countyId) && censusTrack.year === parseInt(year));
         res.json(filteredCensusTracks);
 
 
